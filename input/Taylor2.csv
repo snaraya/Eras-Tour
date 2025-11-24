@@ -1,0 +1,153 @@
+concert_id,city,date,tick_sales,opener_ar1,opener_ar2,place
+1,glendale,17.03.2023,78600,Paramore,Gayle,state farm stadium
+2,glendale,18.03.2023,78600,Paramore,Gayle,state farm stadium
+3,las vegas,24.03.2023,71835,Beabadoobee,Gayle,allegiant stadium
+4,las vegas,25.03.2023,71835,Beabadoobee,Gayle,allegiant stadium
+5,arlington,31.03.2023,105000,Muna,Gayle,at&t stadium
+6,arlington,01.04.2023,105000,Beabadoobee,Gracie Abrams,at&t stadium
+7,arlington,02.04.2023,105000,Beabadoobee,Gracie Abrams,at&t stadium
+8,tampa,13.04.2023,75000,Beabadoobee,Gayle,raymond james stadium
+9,tampa,14.04.2023,75000,Beabadoobee,Gracie Abrams,raymond james stadium
+10,tampa,15.04.2023,75000,Beabadoobee,Gracie Abrams,raymond james stadium
+11,houston,21.03.2023,80000,Beabadoobee,Gracie Abrams,nrg stadium
+12,houston,22.04.2023,80000,Beabadoobee,Gracie Abrams,nrg stadium
+13,houston,23.04.2023,80000,Beabadoobee,Gracie Abrams,nrg stadium
+14,atlanta,28.04.2023,75000,Beabadoobee,Gracie Abrams,mercedes-benz stadium
+15,atlanta,29.04.2023,75000,Beabadoobee,Gracie Abrams,mercedes-benz stadium
+16,atlanta,30.04.2023,75000,Muna,Gayle,mercedes-benz stadium
+17,nashville,05.05.2023,70000,Phoebe Bridgers,Gracie Abrams,nissan stadium
+18,nashville,06.05.2023,70000,Phoebe Bridgers,Gayle,nissan stadium
+19,nashville,07.05.2023,70000,NA,NA,nissan stadium
+20,philadelphia,12.05.2023,70000,Phoebe Bridgers,Gayle,lincoln financial field
+21,philadelphia,13.05.2023,70000,Phoebe Bridgers,Gayle,lincoln financial field
+22,philadelphia,14.05.2023,70000,Phoebe Bridgers,Gracie Abrams,lincoln financial field
+23,foxborough,19.05.2023,66000,Phoebe Bridgers,Gayle,gillette stadium
+24,foxborough,20.05.2023,66000,Phoebe Bridgers,Gayle,gillette stadium
+25,foxborough,21.05.2023,66000,Phoebe Bridgers,Gracie Abrams,gillette stadium
+26,east rutherford,26.05.2023,89000,Phoebe Bridgers,Gayle,metlife stadium
+27,east rutherford,27.05.2023,89000,Phoebe Bridgers,Gracie Abrams,metlife stadium
+28,east rutherford,28.05.2023,89000,Phoebe Bridgers,Owenn,metlife stadium
+29,chicago,02.06.2023,62000,Girl in Red,Owenn,soldier field
+30,chicago,03.06.2023,62000,Girl in Red,Owenn,soldier field
+31,chicago,04.06.2023,62000,Muna,Gracie Abrams,soldier field
+32,detroit,09.06.2023,78000,Girl in Red,Gracie Abrams,ford field
+33,detroit,10.06.2023,78000,Girl in Red,Owenn,ford field
+34,pittsburgh,16.06.2023,75000,Girl in Red,Gracie Abrams,acrisure stadium
+35,pittsburgh,17.06.2023,75000,Girl in Red,Owenn,acrisure stadium
+36,minneapolis,23.06.2023,73000,Girl in Red,Gracie Abrams,u.s. bank stadium
+37,minneapolis,24.06.2023,73000,Girl in Red,Owenn,u.s. bank stadium
+38,cincinnati,30.06.2023,66000,Muna,Gracie Abrams,paycor stadium
+39,cincinnati,01.07.2023,66000,Muna,NA,paycor stadium
+40,kansas city,07.07.2023,77000,Muna,Gracie Abrams,arrowhead stadium
+41,kansas city,08.07.2023,77000,Muna,Gracie Abrams,arrowhead stadium
+42,denver,14.07.2023,84000,Muna,Gracie Abrams,empower field at mile high
+43,denver,15.07.2023,84000,Muna,Gracie Abrams,empower field at mile high
+44,seattle,22.07.2023,72000,Haim,Gracie Abrams,lumen field
+45,seattle,23.07.2023,72000,Haim,Gracie Abrams,lumen field
+46,santa clara,28.07.2023,69000,Haim,Gracie Abrams,levi's stadium
+47,santa clara,29.07.2023,69000,Haim,Gracie Abrams,levi's stadium
+48,los angeles,03.08.2023,100240,Haim,Gracie Abrams,sofi stadium
+49,los angeles,04.08.2023,100240,Haim,Owenn,sofi stadium
+50,los angeles,05.08.2023,100240,Haim,Gayle,sofi stadium
+51,los angeles,07.08.2023,100240,Haim,Gracie Abrams,sofi stadium
+52,los angeles,08.08.2023,100240,Haim,Gracie Abrams,sofi stadium
+53,los angeles,09.08.2023,100240,Haim,Gayle,sofi stadium
+54,mexico city,24.08.2023,65000,Sabrina Carpenter,NA,estadio gnp seguros
+55,mexico city,25.08.2023,65000,Sabrina Carpenter,NA,estadio gnp seguros
+56,mexico city,26.08.2023,65000,Sabrina Carpenter,NA,estadio gnp seguros
+57,mexico city,27.08.2023,65000,Sabrina Carpenter,NA,estadio gnp seguros
+58,buenos aires,09.11.2023,66000,Sabrina Carpenter,Louta,mâs monumental stadium
+59,buenos aires,11.11.2023,66000,Sabrina Carpenter,Louta,mâs monumental stadium
+60,buenos aires,12.11.2023,66000,Sabrina Carpenter,Louta,mâs monumental stadium
+61,rio de janeiro,17.11.2023,60000,Sabrina Carpenter,NA,estádio olímpico nilton santos
+62,rio de janeiro,19.11.2023,60000,Sabrina Carpenter,NA,estádio olímpico nilton santos
+63,rio de janeiro,20.11.2023,60000,Sabrina Carpenter,NA,estádio olímpico nilton santos
+64,são paulo,24.11.2023,44000,Sabrina Carpenter,NA,allianz parque
+65,são paulo,25.11.2023,44000,Sabrina Carpenter,NA,allianz parque
+66,são paulo,26.11.2023,44000,Sabrina Carpenter,NA,allianz parque
+67,tokyo,07.02.2024,70000,NA,NA,tokyo dome
+68,tokyo,08.02.2024,70000,NA,NA,tokyo dome
+69,tokyo,09.02.2024,70000,NA,NA,tokyo dome
+70,tokyo,10.02.2024,70000,NA,NA,tokyo dome
+71,melbourne,16.02.2024,100000,Sabrina Carpenter,NA,melbourne cricket ground
+72,melbourne,17.02.2024,100000,Sabrina Carpenter,NA,melbourne cricket ground
+73,melbourne,18.02.2024,100000,Sabrina Carpenter,NA,melbourne cricket ground
+74,sydney,23.02.2024,84000,Sabrina Carpenter,NA,stadium australia
+75,sydney,24.02.2024,84000,Sabrina Carpenter,NA,stadium australia
+76,sydney,25.02.2024,84000,Sabrina Carpenter,NA,stadium australia
+77,sydney,26.02.2024,84000,Sabrina Carpenter,NA,stadium australia
+78,singapore,02.03.2024,55000,Sabrina Carpenter,NA,singapore national stadium
+79,singapore,03.03.2024,55000,Sabrina Carpenter,NA,singapore national stadium
+80,singapore,04.03.2024,55000,Sabrina Carpenter,NA,singapore national stadium
+81,singapore,07.03.2024,55000,Sabrina Carpenter,NA,singapore national stadium
+82,singapore,08.03.2024,55000,Sabrina Carpenter,NA,singapore national stadium
+83,singapore,09.03.2024,55000,Sabrina Carpenter,NA,singapore national stadium
+84,paris,09.05.2024,40000,Paramore,NA,paris la défense arena
+85,paris,10.05.2024,40000,Paramore,NA,paris la défense arena
+86,paris,11.05.2024,40000,Paramore,NA,paris la défense arena
+87,paris,12.05.2024,40000,Paramore,NA,paris la défense arena
+88,stockholm,17.05.2024,65000,Paramore,NA,nationalarenan strawberry arena
+89,stockholm,18.05.2024,65000,Paramore,NA,nationalarenan strawberry arena
+90,stockholm,19.05.2024,65000,Paramore,NA,nationalarenan strawberry arena
+91,lisbon,24.05.2024,66000,Paramore,NA,estádio da luz
+92,lisbon,25.05.2024,66000,Paramore,NA,estádio da luz
+93,madrid,29.05.2024,82000,Paramore,NA,estadio santiago bernabéu
+94,madrid,30.05.2024,82000,Paramore,NA,estadio santiago bernabéu
+95,lyon,02.06.2024,60000,Paramore,NA,parc olympique lyonnais
+96,lyon,03.06.2024,60000,Paramore,NA,parc olympique lyonnais
+97,edinburgh,07.06.2024,68000,Paramore,NA,murrayfield stadium
+98,edinburgh,08.06.2024,68000,Paramore,NA,murrayfield stadium
+99,edinburgh,09.06.2024,68000,Paramore,NA,murrayfield stadium
+100,liverpool,13.06.2024,62000,Paramore,NA,anfield
+101,liverpool,14.06.2024,62000,Paramore,NA,anfield
+102,liverpool,15.06.2024,62000,Paramore,NA,anfield
+103,cardiff,18.06.2024,75000,Paramore,NA,principality stadium
+104,london,21.06.2024,90000,Paramore,NA,wembley stadium
+105,london,22.06.2024,90000,Paramore,NA,wembley stadium
+106,london,23.06.2024,90000,Paramore,NA,wembley stadium
+107,dublin,28.06.2024,52000,Paramore,NA,aviva stadium
+108,dublin,29.06.2024,52000,Paramore,NA,aviva stadium
+109,dublin,30.06.2024,52000,Paramore,NA,aviva stadium
+110,amsterdam,04.07.2024,56000,Paramore,NA,johan cruyff arena
+111,amsterdam,05.07.2024,56000,Paramore,NA,johan cruyff arena
+112,amsterdam,06.07.2024,56000,Paramore,NA,johan cruyff arena
+113,zürich,09.07.2024,30000,Paramore,NA,stadion letzigrund
+114,zürich,10.07.2024,30000,Paramore,NA,stadion letzigrund
+115,milan,13.07.2024,76000,Paramore,NA,san siro
+116,milan,14.07.2024,76000,Paramore,NA,san siro
+117,gelsenkirchen,17.07.2024,63000,Paramore,NA,veltins-arena
+118,gelsenkirchen,18.07.2024,63000,Paramore,NA,veltins-arena
+119,gelsenkirchen,19.07.2024,63000,Paramore,NA,veltins-arena
+120,hamburg,23.07.2024,57000,Paramore,NA,volksparkstadion
+121,hamburg,24.07.2024,57000,Paramore,NA,volksparkstadion
+122,munich,27.07.2024,75000,Paramore,NA,olympiastadion
+123,munich,28.07.2024,75000,Paramore,NA,olympiastadion
+124,warsaw,01.08.2024,73000,Paramore,NA,kazimierz górski national stadium
+125,warsaw,02.08.2024,73000,Paramore,NA,kazimierz górski national stadium
+126,warsaw,03.08.2024,73000,Paramore,NA,kazimierz górski national stadium
+127,vienna,08.08.2024,51000,Paramore,NA,ernst happel stadion
+128,vienna,09.08.2024,51000,Paramore,NA,ernst happel stadion
+129,vienna,10.08.2024,51000,Paramore,NA,ernst happel stadion
+130,london,15.08.2024,90000,Paramore,NA,wembley stadium
+131,london,16.08.2024,90000,Paramore,NA,wembley stadium
+132,london,17.08.2024,90000,Paramore,NA,wembley stadium
+133,london,19.08.2024,90000,NA,NA,wembley stadium
+134,london,20.08.2024,90000,NA,NA,wembley stadium
+135,miami,18.10.2024,65000,Gracie Abrams,NA,hard rock stadium
+136,miami,19.10.2024,65000,Gracie Abrams,NA,hard rock stadium
+137,miami,20.10.2024,65000,Gracie Abrams,NA,hard rock stadium
+138,new orleans,25.10.2024,83000,Gracie Abrams,NA,the super-dome
+139,new orleans,26.10.2024,83000,Gracie Abrams,NA,the super-dome
+140,new orleans,27.10.2024,83000,Gracie Abrams,NA,the super-dome
+141,indianapolis,01.11.2024,70000,Gracie Abrams,NA,lucas oil stadium
+142,indianapolis,02.11.2024,70000,Gracie Abrams,NA,lucas oil stadium
+143,indianapolis,03.11.2024,70000,Gracie Abrams,NA,lucas oil stadium
+144,toronto,14.11.2024,50000,Gracie Abrams,NA,rogers centre
+145,toronto,15.11.2024,50000,Gracie Abrams,NA,rogers centre
+146,toronto,16.11.2024,50000,Gracie Abrams,NA,rogers centre
+147,toronto,21.11.2024,50000,Gracie Abrams,NA,rogers centre
+148,toronto,22.11.2024,50000,Gracie Abrams,NA,rogers centre
+149,toronto,23.11.2024,50000,Gracie Abrams,NA,rogers centre
+150,vancouver,06.12.2024,55000,Gracie Abrams,NA,bc place
+151,vancouver,07.12.2024,55000,Gracie Abrams,NA,bc place
+152,vancouver,08.12.2024,55000,Gracie Abrams,NA,bc place
