@@ -1,8 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
 
 # Analizando bases de datos del Eras Tour de Taylor Swift
 
