@@ -137,7 +137,8 @@ df_opener |>
 
 -   `theme_minimal()`: La damos el aspecto al gráfico.
 
-![Teloneros principales de The Eras Tour](output/teloneros_principales.png)
+
+<img src="/output/teloneros_principales.png" alt="Teloneros"/>
 
 ## Teloneros totales en un gráfico de barras.
 
@@ -178,7 +179,7 @@ En este gráfico se añaden dos pasos más a los anteriores:
 
 -   `filter(!is.na(telonero))`: Elimina las filas donde no hay telonero (es decir, valores NA).
 
-<img src="/output/teloneros_principales.png" alt="Teloneros"/>
+
 
 ## Cantidad de conciertos por ciudad en un gráfico de barras
 
