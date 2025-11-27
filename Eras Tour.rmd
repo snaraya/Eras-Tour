@@ -117,14 +117,13 @@ Para los siguientes gráficos, usaremos el paquete tayloRswift. Esta
 librería se instala de la siguiente manera:
 
 ```{r}
-remotes::install_github("asteves/tayloRswift")
+#remotes::install_github("asteves/tayloRswift")
 ```
 
 Cargamos la librería:
 
 ```{r}
 library(tayloRswift)
-library(showtext)
 ```
 
 ```{r}
@@ -132,7 +131,7 @@ df_opener <- Taylor2 |>
   count(city, opener_ar1) |> 
   filter(!is.na(opener_ar1))
 
-df_opener |> 
+gg_opener <- df_opener |> 
   ggplot(aes(x = city, y = n, fill = opener_ar1)) + 
   geom_col(position = "dodge", width = 0.5) + 
   labs(title = "The Eras Tour\n¿Quiénes telonearon en cada ciudad?",
@@ -145,10 +144,13 @@ df_opener |>
   theme_minimal() +
   theme(
     title = element_text(face = "bold"),
-    plot.title = element_text(family = "Soulmate", hjust = 0.5),
-    plot.subtitle = element_text(hjust = 0.5),
-    legend.title = element_text(family = "Soulmate")
+    plot.title = element_text(family = "Soulmate", hjust = 0.5, size = 12),
+    plot.subtitle = element_text(hjust = 0.5, size = 10),
+    legend.title = element_text(family = "Soulmate", size = 10),
+    axis.title = element_text(size = 12)
   )
+
+gg_opener
 ```
 
 ¿Qué quiere decir este código?
@@ -174,9 +176,11 @@ df_opener |>
 Para guardar el gráfico, utilizamos `ggsave()`:
 
 ```{r}
-showtext::showtext_auto()
 
-ggsave("output/teloneros_principales.png", width = 7, height = 8)
+ggsave("output/teloneros_principales.png", 
+       gg_opener,
+       width = 5, height = 6)
+
 ```
 
 ## Teloneros totales en un gráfico de barras.
@@ -193,7 +197,7 @@ df_teloneros_total <- Taylor2 |>
   rowwise() |> 
   mutate(porc = n/total)
 
-df_teloneros_total |>
+gg_todos_teloneros <- df_teloneros_total |>
   ggplot(aes(x = city, y = porc, fill = telonero)) +
   geom_col(position = "stack") +
   labs(title = "¿Quiénes telonearon por ciudad?",
@@ -213,7 +217,11 @@ df_teloneros_total |>
 ```
 
 ```{r}
-ggsave("output/teloneros_totales.png", width = 7, height = 8)
+ggsave("output/todos_teloneros.png", 
+       gg_todos_teloneros,
+       width = 4, 
+       height = 5,
+       dpi = 200)  
 ```
 
 En este gráfico se añaden dos pasos más a los anteriores:

@@ -1,9 +1,6 @@
-
 # Analizando bases de datos del Eras Tour de Taylor Swift
 
-Este proyecto analiza una base de datos del Tour mundial realizado por
-la artista Taylor Swift para realizar distintas funciones en R y
-Rmarkdown conectarlo con Github.
+Este proyecto analiza una base de datos del Tour mundial realizado por la artista Taylor Swift para realizar distintas funciones en R y Rmarkdown conectarlo con Github.
 
 ## Cargamos las librerías a utilizar
 
@@ -14,8 +11,7 @@ library(janitor)
 
 ## Cargamos la base de datos
 
-Usamos `read_csv2` para que lea bien el archivo CSV ya que está separado
-por ";" y de esta forma se ordena directamente en columnas.
+Usamos `read_csv2` para que lea bien el archivo CSV ya que está separado por ";" y de esta forma se ordena directamente en columnas.
 
 ```{r}
 Taylor_dataset <- read_csv2("data/TaylorDataset.csv")
@@ -51,25 +47,21 @@ glimpse(Taylor2)
 
 ### Exploración de la base de datos
 
-Vamos a revisar cuántos conciertos hubo por ciudad, para esto utilizamos
-`count()` que arroja el número de ocurrencias en este caso de cuantos
-conciertos hubo en cada una de las ciudades.
+Vamos a revisar cuántos conciertos hubo por ciudad, para esto utilizamos `count()` que arroja el número de ocurrencias en este caso de cuantos conciertos hubo en cada una de las ciudades.
 
 ```{r}
 Taylor2 |> 
   count(city, sort = TRUE)
 ```
 
-Veremos qué artistas telonearon como telonero principal y cuántas veces,
-para esto también utilizamos `count()`:
+Veremos qué artistas telonearon como telonero principal y cuántas veces, para esto también utilizamos `count()`:
 
 ```{r}
 Taylor2 |> 
   count(opener_ar1, sort = TRUE)
 ```
 
-Y también veremos que artistas telonearon como telonero secundario y
-cuántas veces.
+Y también veremos que artistas telonearon como telonero secundario y cuántas veces.
 
 ```{r}
 Taylor2 |> 
@@ -90,19 +82,13 @@ Taylor2 |>
   select(city, date, tick_sales)
 ```
 
-`max(tick_sales, na.rm = TRUE)` nos ayuda a busca el valor máximo de la
-columna `tick_sales` (ventas de entradas), ignorando los NA si los hay,
-luego `filter()` selecciona solo las filas donde `tick_sales` es igual a
-ese valor máximo. Es decir, el concierto con más entradas vendidas.
-Después de filtrar, `select()` extrae solo las columnas `city`, `date` y
-`tick_sales` para mostrar la información relevante.
+`max(tick_sales, na.rm = TRUE)` nos ayuda a busca el valor máximo de la columna `tick_sales` (ventas de entradas), ignorando los NA si los hay, luego `filter()` selecciona solo las filas donde `tick_sales` es igual a ese valor máximo. Es decir, el concierto con más entradas vendidas. Después de filtrar, `select()` extrae solo las columnas `city`, `date` y `tick_sales` para mostrar la información relevante.
 
 # Visualización de datos
 
 ### Telonera/o principal por ciudad en un gráfico de barras
 
-Para los siguientes gráficos, usaremos el paquete `tayloRswift`. Esta
-librería se instala de la siguiente manera:
+Para los siguientes gráficos, usaremos el paquete `tayloRswift`. Esta librería se instala de la siguiente manera:
 
 ```{r}
 remotes::install_github("asteves/tayloRswift")
@@ -141,26 +127,17 @@ df_opener |>
 
 ¿Qué quiere decir este código?
 
--   `count(city)`: cuenta cuántas veces aparece cada ciudad en la
-    columna `city`, es decir, cuántos conciertos hubo en cada ciudad. El
-    resultado es un nuevo data frame con dos columnas: `city` y `n` (el
-    número de conciertos).
+-   `count(city)`: cuenta cuántas veces aparece cada ciudad en la columna `city`, es decir, cuántos conciertos hubo en cada ciudad. El resultado es un nuevo data frame con dos columnas: `city` y `n` (el número de conciertos).
 
--   `ggplot(aes(x = reorder(city, n), y = n))`: Crea el gráfico usando
-    `ggplot2` y `reorder(city, n)` ordena las ciudades según el número
-    de conciertos (de menor a mayor). Así el eje x será la ciudad
-    (ordenada), y el eje y será el número de conciertos.
+-   `ggplot(aes(x = reorder(city, n), y = n))`: Crea el gráfico usando `ggplot2` y `reorder(city, n)` ordena las ciudades según el número de conciertos (de menor a mayor). Así el eje x será la ciudad (ordenada), y el eje y será el número de conciertos.
 
--   `coord_flip()`: Invierte los ejes, para que las ciudades se muestren
-    en el eje vertical y las barras en horizontal para mejorar la
-    legibilidad ya que hay muchas ciudades.
+-   `coord_flip()`: Invierte los ejes, para que las ciudades se muestren en el eje vertical y las barras en horizontal para mejorar la legibilidad ya que hay muchas ciudades.
 
 -   `labs()`: Nos sirve para agregar títulos a los ejes.
 
 -   `theme_minimal()`: La damos el aspecto al gráfico.
 
-![Teloneros principales de The Eras
-Tour](output/teloneros_principales.png)
+![Teloneros principales de The Eras Tour](output/teloneros_principales.png)
 
 ## Teloneros totales en un gráfico de barras.
 
@@ -197,16 +174,11 @@ df_teloneros_total |>
 
 En este gráfico se añaden dos pasos más a los anteriores:
 
--   `pivot_longer()`: Convierte las columnas `opener_ar1` y `opener_ar2`
-    (los teloneros) en una sola columna llamada telonero. Esto permite
-    analizar todos los teloneros juntos, **sin importar si fueron el
-    primero o el segundo**.
+-   `pivot_longer()`: Convierte las columnas `opener_ar1` y `opener_ar2` (los teloneros) en una sola columna llamada telonero. Esto permite analizar todos los teloneros juntos, **sin importar si fueron el primero o el segundo**.
 
--   `filter(!is.na(telonero))`: Elimina las filas donde no hay telonero
-    (es decir, valores NA).
+-   `filter(!is.na(telonero))`: Elimina las filas donde no hay telonero (es decir, valores NA).
 
-![Distribución de teloneros por presentación en The Eras
-Tour](output/teloneros_totales.png)
+<img src="/output/teloneros_principales.png" alt="Teloneros"/>
 
 ## Cantidad de conciertos por ciudad en un gráfico de barras
 
@@ -228,30 +200,18 @@ Taylor2 |>
   )
 ```
 
-![Número total de presentaciones por ciudad](output/show_totales.png)
+<img src="/output/total_teloneros.png" alt="Teloneros totales"/>
 
-En este gráfico se realizan los mismos pasos anteriores, pero
-`geom_col(fill = "#b8396b")` dibuja las barras del gráfico con color
-rosado.
+En este gráfico se realizan los mismos pasos anteriores, pero `geom_col(fill = "#b8396b")` dibuja las barras del gráfico con color rosado.
 
 ## Conclusión
 
-Este trabajo permitió revisar visualmente las ciudades en que se
-realizaron conciertos de Taylor Swift, eventualmente se podía generar un
-mapa para mejorar esta visualización. La base de datos estaba ordenada
-por lo que fue sencillo trabajar con ella y no fue necesario realizar
-tantos ajustes, por lo que se optó por simplificar en términos de
-cantidad de datos principalmente.
+Este trabajo permitió revisar visualmente las ciudades en que se realizaron conciertos de Taylor Swift, eventualmente se podía generar un mapa para mejorar esta visualización. La base de datos estaba ordenada por lo que fue sencillo trabajar con ella y no fue necesario realizar tantos ajustes, por lo que se optó por simplificar en términos de cantidad de datos principalmente.
 
-Respecto a los datos se pudo revisar que la ciudad con más ventas fue
-Arlington y además, la revisión de teloneros se complejizaba por dos
-razones:
+Respecto a los datos se pudo revisar que la ciudad con más ventas fue Arlington y además, la revisión de teloneros se complejizaba por dos razones:
 
--   La división de teloneros entre principales y secundarios hace que se
-    repitan, por lo que aumenta la dificultad de interpretación.
+-   La división de teloneros entre principales y secundarios hace que se repitan, por lo que aumenta la dificultad de interpretación.
 
-**Gracias por revisar este análisis de datos del Tour Mundial "Eras" de
-Taylor Swift**.
+**Gracias por revisar este análisis de datos del Tour Mundial "Eras" de Taylor Swift**.
 
-> La base de datos fue obtenida desde la página
-> [Kaggle](https://www.kaggle.com/datasets/tymonbot/taylor-swift-eras-toure?resource=download).
+> La base de datos fue obtenida desde la página [Kaggle](https://www.kaggle.com/datasets/tymonbot/taylor-swift-eras-toure?resource=download).
